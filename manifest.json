@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "NOPE",
+   "permissions": [
+      "activeTab",
+      "storage"
+    ],
+  "author":"Anna Kotyk",
+  "description" : "Hide GlassGoor jobs you are not interested in",
+  "version": "0.1",
+  "icons": { 
+	"32":"NopeIcon8.png"},
+
+  "content_scripts": [
+  {
+    "matches": ["https://www.glassdoor.com/*" ],
+    "js": ["content.js"]
+	}
+  ],
+
+"browser_action": {
+"setBadgeText":"NOPE"}
+
+} 
